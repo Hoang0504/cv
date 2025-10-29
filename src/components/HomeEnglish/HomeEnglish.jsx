@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "@mui/material/Container";
 import {
   Box,
@@ -11,18 +10,12 @@ import {
   ListItemIcon,
   Link,
   Avatar,
-  Paper,
 } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import classNames from "classnames/bind";
-
-import styles from "./HomeEnglish.module.scss";
 import avatar from "../../assets/img/avatar.jpg";
-
-const cx = classNames.bind(styles);
 
 function HomeEnglish() {
   return (
@@ -67,7 +60,6 @@ function HomeEnglish() {
                   FRONTEND & BACKEND SOFTWARE ENGINEER
                 </Typography>
               </Box>
-
               {/* Contact Information */}
               <List>
                 <ListItem disablePadding>
@@ -84,29 +76,12 @@ function HomeEnglish() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <FacebookIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    <Link
-                      href="https://www.facebook.com/hoanghuy2k4"
-                      target="_blank"
-                      underline="hover"
-                      sx={{ color: "#ffb400" }}
-                    >
-                      Here
-                    </Link>
-                  </ListItemText>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
                     <LocationOnIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Truong Dinh, Hoang Mai, Ha Noi" />
+                  <ListItemText primary="Tuong Mai, Ha Noi" />
                 </ListItem>
               </List>
-
               <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-
               {/* Skills Section */}
               <Typography
                 variant="h6"
@@ -115,43 +90,42 @@ function HomeEnglish() {
                 SKILLS
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                MAJOR
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Research and learn new technologies.
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Deployed several frontend & backend website projects with
-                Next.js 14.
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
                 Frontend:
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                + UI/UX programming based on ReactJS, Javascript (ES6),
-                HTML5/CSS (sass), Jquery, Bootstrap 5 ...
+                + UI/UX programming based on ReactJS, Javacript (ES6), HTML5/CSS
+                (SCSS), Jquery, Bootstrap 5, TailwindCSS
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                + Responsive web design, working with RESTful APIs ...
+                + Responsive web design, working with REST ful APIs. ...
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
                 Backend:
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                Backend programming: PHP, C#, NodeJS, Java and databases SQL
-                Server, MySQL, MongoDB ...
+                Backend programming: NodeJS, NextJS
+              </Typography>
+              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+                Database:
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                SQL Server, MySQL, MongoDB ...
+              </Typography>
+              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+                A.I:
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                Proficient in applying A.I to accelerate professional tasks.
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
                 DevOps:
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                Exposed to real-world devops knowledge, working with CI/CD on
+                Exposed to practical devops knowledge, working with ci - cd of
                 git, gitlab and jenkins ...
               </Typography>
-
               <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-
-              {/* Interests Section */}
+              {/* Interests Section */}{" "}
               <Typography
                 variant="h6"
                 sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
@@ -159,8 +133,19 @@ function HomeEnglish() {
                 INTERESTS
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                Reading books, climbing, exploring, self-researching and
-                developing myself
+                Reading, mountaineering, exploring, self-research and personal
+                development
+              </Typography>
+              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+              {/* Interests Section */}
+              <Typography
+                variant="h6"
+                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+              >
+                INTRODUCTION
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                Aptech Computer Education
               </Typography>
             </Box>
           </Grid2>
@@ -177,7 +162,7 @@ function HomeEnglish() {
                 PERSONAL SUMMARY
               </Typography>
               <Typography sx={{ mt: 2, mb: 4 }}>
-                I am an IT student with a strong eagerness to learn and
+                I am a programmer with a strong eagerness to learn and
                 persistence. Although I have some limitations in pronunciation
                 and flexibility, I always strive to complete every task assigned
                 to me. With diligence and responsibility, I aim to contribute to
@@ -193,13 +178,13 @@ function HomeEnglish() {
               >
                 CAREER OBJECTIVES
               </Typography>
-              <Typography sx={{ mt: 2, mb: 4 }}>
-                Apply the knowledge and skills I have learned to perform
-                assigned tasks with high quality and efficiency. Aim to become a
-                Junior Developer within the next year and a Senior Developer in
-                the next 5 years. Master advanced knowledge: system
-                architecture, performance optimization, security, databases,
-                DevOps...
+              <Typography sx={{ mt: 2 }}>
+                Apply the knowledge learned and equipped to execute assigned
+                tasks excellently with maximum effectiveness and efficiency.
+              </Typography>
+              <Typography sx={{ mb: 4 }}>
+                Master advanced knowledge: system architecture, performance
+                optimization, security, database, DevOps...
               </Typography>
 
               {/* Projects Section */}
@@ -218,26 +203,31 @@ function HomeEnglish() {
                     06/2023 - 07/2023
                   </Typography>
                   <Typography variant="body2">Aptech Project 1</Typography>
-                  <Typography variant="body2">Duration: 1 month</Typography>
-                  <Typography variant="body2">Team size: 2 members</Typography>
                   <Typography variant="body2">
-                    Applied knowledge of HTML, CSS, Javascript, PHP, and MySQL.
-                    Created interface and responsive design.
+                    Participation: Leader of 2 members - Aptech Semester 1
+                    Project
+                  </Typography>
+                  <Typography variant="body2">
+                    Responsibilities: Applied knowledge of HTML, CSS, Javacript,
+                    PHP and Mysql. Displayed product list, search, news,
+                    shopping cart, checkout and CRUD.
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
                   <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                    VEHICLE INSURANCE (Website for vehicle insurance)
+                    VEHICLE INSURANCE (Vehicle insurance website)
                   </Typography>
                   <Typography variant="subtitle2" color="text.secondary">
                     08/2024 - 09/2024
                   </Typography>
                   <Typography variant="body2">
-                    Team of 4 members with role as team leader
+                    Participation: Leader of 3 members - Aptech Semester 3
+                    Project
                   </Typography>
                   <Typography variant="body2">
-                    Built web interface using React with UI libraries like
-                    AntDesign..., backend with C# MVC
+                    Responsibilities: Created web interface using React combined
+                    with UI libraries like AntDesign.... Backend built with C#
+                    MVC
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -248,10 +238,12 @@ function HomeEnglish() {
                     05/2025 - 06/2025
                   </Typography>
                   <Typography variant="body2">
-                    Leader of 4 members - Aptech Semester 4
+                    Participation: Leader of 4 members - Aptech Semester 4
                   </Typography>
                   <Typography variant="body2">
-                    Backend, frontend logic and especially exam-taking feature
+                    Responsibilities: Backend built with NextJS combined with
+                    NodeJS Logic frontend and especially the **exam-taking
+                    feature**.
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -263,13 +255,21 @@ function HomeEnglish() {
                   </Typography>
                   <Typography variant="body2">
                     DMAX - HỌC CHẮC THI ĐẠT TOEIC:{" "}
-                    <a href="https://dmaxtoeic.edu.vn" target="_blank">
+                    <a
+                      style={{ color: "#ffb400" }}
+                      href="https://dmaxtoeic.edu.vn"
+                      target="_blank"
+                    >
                       https://dmaxtoeic.edu.vn
                     </a>
                   </Typography>
                   <Typography variant="body2">
                     DSKILL - NÂNG CAO KỸ NĂNG MỀM:{" "}
-                    <a href="https://dskill.edu.vn" target="_blank">
+                    <a
+                      style={{ color: "#ffb400" }}
+                      href="https://dskill.edu.vn"
+                      target="_blank"
+                    >
                       https://dskill.edu.vn
                     </a>
                   </Typography>
@@ -289,16 +289,20 @@ function HomeEnglish() {
                     INFORMATION TECHNOLOGY MAJOR
                   </Typography>
                   <Typography variant="subtitle2" color="text.secondary">
-                    2022 - Present
+                    2022 - 2025
                   </Typography>
                   <Typography variant="body2">
-                    International Programmer Training System - Aptech
+                    Successfully completed 4 semesters, worked on 6 practical
+                    projects during the curriculum at Aptech Computer Education
+                    with the role of Leader in 6/6 projects.
                   </Typography>
                   <Typography variant="body2">
-                    Participated in Techwiz contest organized by Aptech
+                    Participated in TechWiz 4 competition - the global
+                    technology battle organized by Aptech
                   </Typography>
                   <Typography variant="body2">
-                    Achieved many good results here
+                    Achieved Top 3 outstanding student award (Aptech Star) in
+                    2025.
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -309,12 +313,27 @@ function HomeEnglish() {
                     2020 - Present
                   </Typography>
                   <Typography variant="body2">
-                    Learned new technologies, frontend/backend frameworks and
-                    DevOps.
+                    Researched new technologies, frameworks for frontend,
+                    backend, and devops.
                   </Typography>
                   <Typography variant="body2">
-                    F8 Fullstack: Obtained several certificates such as HTML,
-                    CSS, Responsive, Javascript, ReactJS ....
+                    F8 fullstack: Obtained several certificates here such as
+                    HTML, CSS; Responsive; Javacript; React JS ....
+                  </Typography>
+
+                  <Typography variant="body2">
+                    See the most detailed done projects and certificates:{" "}
+                    <a
+                      style={{ color: "#ffb400" }}
+                      href="https://docs.google.com/document/d/1tXE4OIvEsiTZtiKT8U_g3Us0T8jZ-jwCZ0AGnZ9GuY0/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Here
+                    </a>
+                  </Typography>
+                  <Typography variant="body2">
+                    Always challenge myself with new skills whenever I have free
+                    time.
                   </Typography>
                 </Grid2>
               </Grid2>

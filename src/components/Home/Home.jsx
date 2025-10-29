@@ -9,12 +9,10 @@ import {
   ListItem,
   ListItemText,
   ListItemIcon,
-  Link,
   Avatar,
 } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import classNames from "classnames/bind";
 
@@ -83,21 +81,6 @@ function Home() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <FacebookIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    <Link
-                      href="https://www.facebook.com/hoanghuy2k4"
-                      target="_blank"
-                      underline="hover"
-                      sx={{ color: "#ffb400" }}
-                    >
-                      Tại đây
-                    </Link>
-                  </ListItemText>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
                     <LocationOnIcon />
                   </ListItemIcon>
                   <ListItemText primary="Trương Định, Hoàng Mai, Hà Nội" />
@@ -111,33 +94,35 @@ function Home() {
                 variant="h6"
                 sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
               >
-                CÁC KỸ NĂNG
+                Kỹ năng
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                CHUYÊN NGÀNH
+                Frontend:
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                Nghiên cứu và học hỏi các công nghệ mới.
+                + Lập trình UI/UX dựa trên ReactJS, Javacript (ES6), HTML5/CSS
+                (SCSS), Jquery, Bootstrap 5, TailwindCSS
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                Đã triển khai một số dự án website fe & be với Next.js 14.
+                + Thiết kế responsive web, làm việc với REST ful APIs. ...
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Front end:
+                Backend:
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                + Lập trình UI/UX dựa trên ReactJS, Javascript (ES6), HTML5/CSS
-                (sass), Jquery, Bootstrap 5 ...
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                + Thiết kế responsive web design, làm việc với RESTful APIs ...
+                Lập trình backend: NodeJS, NextJS
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Back end:
+                Cơ sở dữ liệu:
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                Lập trình backend: PHP, C#, NodeJS, Java và cơ sở dữ liệu SQL
-                Server, MySQL, MongoDB ...
+                SQL Server, MySQL, MongoDB ...
+              </Typography>
+              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+                A.I:
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                Thành thạo ứng dụng A.I để tăng tốc độ chuyên môn.
               </Typography>
               <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
                 DevOps:
@@ -160,6 +145,19 @@ function Home() {
                 Đọc sách, leo núi, khám phá, tự nghiên cứu tìm tòi và phát triển
                 bản thân
               </Typography>
+
+              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+
+              {/* Interests Section */}
+              <Typography
+                variant="h6"
+                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+              >
+                GIỚI THIỆU
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                Hệ thống đào tạo lập trình viên quốc tế Aptech
+              </Typography>
             </Box>
           </Grid2>
           <Grid2 size={9}>
@@ -175,7 +173,7 @@ function Home() {
                 TÓM TẮT BẢN THÂN
               </Typography>
               <Typography sx={{ mt: 2, mb: 4 }}>
-                Tôi là một sinh viên công nghệ thông tin với tinh thần ham học
+                Tôi là lập trình viên công nghệ thông tin với tinh thần ham học
                 hỏi và kiên trì. Mặc dù có một số hạn chế về khả năng phát âm và
                 sự linh hoạt, tôi luôn nỗ lực hết mình để hoàn thành xuất sắc
                 mọi nhiệm vụ được giao. Với sự chăm chỉ và tinh thần trách
@@ -192,13 +190,13 @@ function Home() {
               >
                 MỤC TIÊU NGHỀ NGHIỆP
               </Typography>
-              <Typography sx={{ mt: 2, mb: 4 }}>
-                Áp dụng những kiến thức được học và trang bị những kỹ năng để
-                thực hiện nhiệm vụ được giao với chất lượng và hiệu quả cao.
-                Hướng tới hoàn thành Junior Developer trong vòng 1 năm tới và
-                trở thành Senior Developer trong 5 năm tiếp theo. Nắm vững các
-                kiến thức nâng cao: kiến trúc hệ thống, tối ưu hiệu năng, bảo
-                mật, cơ sở dữ liệu, DevOps...
+              <Typography sx={{ mt: 2 }}>
+                Áp dụng những kiến thức được học và trang bị để thực hiện xuất
+                sắc nhiệm vụ được giao với hiệu quả và hiệu suất tối đa.
+              </Typography>
+              <Typography sx={{ mb: 4 }}>
+                Nắm vững các kiến thức nâng cao: kiến trúc hệ thống, tối ưu hiệu
+                năng, bảo mật, cơ sở dữ liệu, DevOps...
               </Typography>
 
               {/* Projects Section */}
@@ -217,13 +215,13 @@ function Home() {
                     06/2023 - 07/2023
                   </Typography>
                   <Typography variant="body2">Đồ án 1 Aptech</Typography>
-                  <Typography variant="body2">Thời gian: 1 tháng</Typography>
                   <Typography variant="body2">
-                    Tham gia: 2 thành viên
+                    Tham gia: Leader 2 thành viên - Đồ án kỳ 1 của Aptech
                   </Typography>
                   <Typography variant="body2">
-                    Áp dụng những kiến thức về HTML, CSS, Javascript, PHP và
-                    mysql. Tạo giao diện và responsive.
+                    Nhiệm vụ: Áp dụng những kiến thức về HTML,CSS, Javacript,
+                    PHP và Mysql Hiển thị danh sách sản phẩm, tìm kiếm, tin tức,
+                    giỏ hàng, checkout và CRUD
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -234,11 +232,11 @@ function Home() {
                     08/2024 - 09/2024
                   </Typography>
                   <Typography variant="body2">
-                    Tham gia: 4 thành viên tham gia cùng với vị trí trưởng nhóm
+                    Tham gia: Leader 3 thành viên - Đồ án kỳ 3 của Aptech
                   </Typography>
                   <Typography variant="body2">
-                    Tạo giao diện web bằng react kết hợp với các thư viện tạo
-                    giao diện như Antdesign..., backend làm bằng c# MVC
+                    Nhiệm vụ: Tạo giao diện web bằng react kết hợp với các thư
+                    viện tạo giao diện như Antdesign.... Backend làm bằng C# MVC
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -252,7 +250,8 @@ function Home() {
                     Tham gia: Leader 4 thành viên - Kỳ 4 Aptech
                   </Typography>
                   <Typography variant="body2">
-                    Backend, logic Fontend và đặc biệt là phần làm bài thi
+                    Nhiệm vụ: Backend làm bằng NextJS kết hợp NodeJS Logic
+                    frontend và đặc biệt là phần làm bài thi
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -264,13 +263,21 @@ function Home() {
                   </Typography>
                   <Typography variant="body2">
                     DMAX - HỌC CHẮC THI ĐẠT TOEIC:{" "}
-                    <a href="https://dmaxtoeic.edu.vn" target="_blank">
+                    <a
+                      style={{ color: "#ffb400" }}
+                      href="https://dmaxtoeic.edu.vn"
+                      target="_blank"
+                    >
                       https://dmaxtoeic.edu.vn
                     </a>
                   </Typography>
                   <Typography variant="body2">
                     DSKILL - NÂNG CAO KỸ NĂNG MỀM:{" "}
-                    <a href="https://dskill.edu.vn" target="_blank">
+                    <a
+                      style={{ color: "#ffb400" }}
+                      href="https://dskill.edu.vn"
+                      target="_blank"
+                    >
                       https://dskill.edu.vn
                     </a>
                   </Typography>
@@ -290,16 +297,20 @@ function Home() {
                     CHUYÊN NGÀNH CÔNG NGHỆ THÔNG TIN
                   </Typography>
                   <Typography variant="subtitle2" color="text.secondary">
-                    2022 - Nay
+                    2022 - 2025
                   </Typography>
                   <Typography variant="body2">
-                    Hệ thống đào tạo lập trình viên Quốc tế Aptech
+                    Hoàn thành xuất sắc 4 kỳ học, làm được thực tế 6 đồ án trong
+                    chương trình học tại hệ thống đào tạo lập trình viên Quốc tế
+                    Aptech với vai trò Leader 6/6 đồ án.
                   </Typography>
                   <Typography variant="body2">
-                    Từng tham gia cuộc thi techwiz do Aptech tổ chức
+                    Tham gia cuộc thi TechWiz 4 - cuộc chiến công nghệ toàn cầu
+                    do Aptech tổ chức
                   </Typography>
                   <Typography variant="body2">
-                    Đạt nhiều kết quả tốt tại đây
+                    Đạt được giải thưởng top 3 học viên tiêu biểu (Aptech Star)
+                    năm 2025.
                   </Typography>
                 </Grid2>
                 <Grid2 size={6}>
@@ -316,6 +327,21 @@ function Home() {
                   <Typography variant="body2">
                     F8 fullstack: Có được 1 số chứng chỉ ở đây như HTML, CSS;
                     Responsive; Javacript; React JS ....
+                  </Typography>
+
+                  <Typography variant="body2">
+                    Xem chi tiết nhất những dự án đã làm và chứng chỉ:{" "}
+                    <a
+                      style={{ color: "#ffb400" }}
+                      href="https://docs.google.com/document/d/1tXE4OIvEsiTZtiKT8U_g3Us0T8jZ-jwCZ0AGnZ9GuY0/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Tại đây
+                    </a>
+                  </Typography>
+                  <Typography variant="body2">
+                    Luôn tự thử thách bản thân với những kỹ năng mới mỗi khi có
+                    thời gian rảnh.
                   </Typography>
                 </Grid2>
               </Grid2>
