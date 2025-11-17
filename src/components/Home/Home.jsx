@@ -14,12 +14,7 @@ import {
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import classNames from "classnames/bind";
-
-import styles from "./Home.module.scss";
 import avatar from "../../assets/img/avatar.jpg";
-
-const cx = classNames.bind(styles);
 
 function Home() {
   return (
@@ -27,140 +22,136 @@ function Home() {
       {/* Main Content */}
       <Container maxWidth="false" disableGutters>
         <Grid2 container spacing={2}>
-          <Grid2 style={{ display: "flex", flex: 1 }} size={3}>
-            <Box
-              sx={{
-                backgroundColor: "#333",
-                color: "#f5f5f5",
-                p: 3,
-              }}
+          <Grid2
+            size={{ xs: 12, sm: 4, lg: 3 }}
+            style={{
+              backgroundColor: "#333",
+              color: "#f5f5f5",
+              padding: "20px",
+            }}
+          >
+            {/* Header */}
+            <Grid2
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              size="grow"
             >
-              {/* Header */}
-              <Grid2
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                size="grow"
-              >
-                <Avatar src={avatar} sx={{ width: 100, height: 100 }} />
-              </Grid2>
-              <Box
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                justifyContent="center"
-                textAlign="center"
-              >
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "bold", color: "#ffb400" }}
-                >
-                  Trần Ngọc Huy Hoàng
-                </Typography>
-                <Typography
-                  variant="subtitle2"
-                  sx={{ color: "#ffb400", mb: 2 }}
-                >
-                  FONTEND & BACKEND SOFTWARE ENGINEER
-                </Typography>
-              </Box>
-
-              {/* Contact Information */}
-              <List>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <PhoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="0397273850" />
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <MailIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="ngochoanghuy0504@gmail.com" />
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <LocationOnIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Trương Định, Hoàng Mai, Hà Nội" />
-                </ListItem>
-              </List>
-
-              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-
-              {/* Skills Section */}
+              <Avatar src={avatar} sx={{ width: 100, height: 100 }} />
+            </Grid2>
+            <Box
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              justifyContent="center"
+              textAlign="center"
+            >
               <Typography
                 variant="h6"
-                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+                sx={{ fontWeight: "bold", color: "#ffb400" }}
               >
-                Kỹ năng
+                Trần Ngọc Huy Hoàng
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Frontend:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                + Lập trình UI/UX dựa trên ReactJS, Javacript (ES6), HTML5/CSS
-                (SCSS), Jquery, Bootstrap 5, TailwindCSS
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                + Thiết kế responsive web, làm việc với REST ful APIs. ...
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Backend:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Lập trình backend: NodeJS, NextJS
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Cơ sở dữ liệu:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                SQL Server, MySQL, MongoDB ...
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                A.I:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Thành thạo ứng dụng A.I để tăng tốc độ chuyên môn.
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                DevOps:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Được tiếp cận với các kiến thức devops trong thực tế, làm việc
-                với ci - cd của git, gitlab và jenkins ...
-              </Typography>
-
-              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-
-              {/* Interests Section */}
-              <Typography
-                variant="h6"
-                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
-              >
-                SỞ THÍCH
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Đọc sách, leo núi, khám phá, tự nghiên cứu tìm tòi và phát triển
-                bản thân
-              </Typography>
-
-              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-
-              {/* Interests Section */}
-              <Typography
-                variant="h6"
-                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
-              >
-                GIỚI THIỆU
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Hệ thống đào tạo lập trình viên quốc tế Aptech
+              <Typography variant="subtitle2" sx={{ color: "#ffb400", mb: 2 }}>
+                FONTEND & BACKEND SOFTWARE ENGINEER
               </Typography>
             </Box>
+
+            {/* Contact Information */}
+            <List>
+              <ListItem disablePadding>
+                <ListItemIcon sx={{ color: "#ffb400" }}>
+                  <PhoneIcon />
+                </ListItemIcon>
+                <ListItemText primary="0397273850" />
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon sx={{ color: "#ffb400" }}>
+                  <MailIcon />
+                </ListItemIcon>
+                <ListItemText primary="ngochoanghuy0504@gmail.com" />
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon sx={{ color: "#ffb400" }}>
+                  <LocationOnIcon />
+                </ListItemIcon>
+                <ListItemText primary="Trương Định, Hoàng Mai, Hà Nội" />
+              </ListItem>
+            </List>
+
+            <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+
+            {/* Skills Section */}
+            <Typography
+              variant="h6"
+              sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+            >
+              Kỹ năng
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              Frontend:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              + Lập trình UI/UX dựa trên ReactJS, Javacript (ES6), HTML5/CSS
+              (SCSS), Jquery, Bootstrap 5, TailwindCSS
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              + Thiết kế responsive web, làm việc với REST ful APIs. ...
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              Backend:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Lập trình backend: NodeJS, NextJS
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              Cơ sở dữ liệu:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              SQL Server, MySQL, MongoDB ...
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              A.I:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Thành thạo ứng dụng A.I để tăng tốc độ chuyên môn.
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              DevOps:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Được tiếp cận với các kiến thức devops trong thực tế, làm việc với
+              ci - cd của git, gitlab và jenkins ...
+            </Typography>
+
+            <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+
+            {/* Interests Section */}
+            <Typography
+              variant="h6"
+              sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+            >
+              SỞ THÍCH
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Đọc sách, leo núi, khám phá, tự nghiên cứu tìm tòi và phát triển
+              bản thân
+            </Typography>
+
+            <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+
+            {/* Interests Section */}
+            <Typography
+              variant="h6"
+              sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+            >
+              GIỚI THIỆU
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Hệ thống đào tạo lập trình viên quốc tế Aptech
+            </Typography>
           </Grid2>
-          <Grid2 size={9}>
+          <Grid2 size={{ xs: 12, sm: 8, lg: 9 }}>
             <Box sx={{ padding: 3 }}>
               {/* Header */}
               <Typography

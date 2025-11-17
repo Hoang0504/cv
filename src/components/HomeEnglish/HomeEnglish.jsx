@@ -8,12 +8,10 @@ import {
   ListItem,
   ListItemText,
   ListItemIcon,
-  Link,
   Avatar,
 } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import avatar from "../../assets/img/avatar.jpg";
 
@@ -23,133 +21,129 @@ function HomeEnglish() {
       {/* Main Content */}
       <Container maxWidth="false" disableGutters>
         <Grid2 container spacing={2}>
-          <Grid2 style={{ display: "flex", flex: 1 }} size={3}>
-            <Box
-              sx={{
-                backgroundColor: "#333",
-                color: "#f5f5f5",
-                p: 3,
-              }}
+          <Grid2
+            size={{ xs: 12, sm: 4, lg: 3 }}
+            style={{
+              backgroundColor: "#333",
+              color: "#f5f5f5",
+              padding: "20px",
+            }}
+          >
+            {/* Header */}
+            <Grid2
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              size="grow"
             >
-              {/* Header */}
-              <Grid2
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                size="grow"
-              >
-                <Avatar src={avatar} sx={{ width: 100, height: 100 }} />
-              </Grid2>
-              <Box
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                justifyContent="center"
-                textAlign="center"
-              >
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "bold", color: "#ffb400" }}
-                >
-                  Tran Ngoc Huy Hoang
-                </Typography>
-                <Typography
-                  variant="subtitle2"
-                  sx={{ color: "#ffb400", mb: 2 }}
-                >
-                  FRONTEND & BACKEND SOFTWARE ENGINEER
-                </Typography>
-              </Box>
-              {/* Contact Information */}
-              <List>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <PhoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="0397273850" />
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <MailIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="ngochoanghuy0504@gmail.com" />
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon sx={{ color: "#ffb400" }}>
-                    <LocationOnIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Tuong Mai, Ha Noi" />
-                </ListItem>
-              </List>
-              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-              {/* Skills Section */}
+              <Avatar src={avatar} sx={{ width: 100, height: 100 }} />
+            </Grid2>
+            <Box
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              justifyContent="center"
+              textAlign="center"
+            >
               <Typography
                 variant="h6"
-                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+                sx={{ fontWeight: "bold", color: "#ffb400" }}
               >
-                SKILLS
+                Tran Ngoc Huy Hoang
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Frontend:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                + UI/UX programming based on ReactJS, Javacript (ES6), HTML5/CSS
-                (SCSS), Jquery, Bootstrap 5, TailwindCSS
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                + Responsive web design, working with REST ful APIs. ...
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Backend:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Backend programming: NodeJS, NextJS
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                Database:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                SQL Server, MySQL, MongoDB ...
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                A.I:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Proficient in applying A.I to accelerate professional tasks.
-              </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
-                DevOps:
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Exposed to practical devops knowledge, working with ci - cd of
-                git, gitlab and jenkins ...
-              </Typography>
-              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-              {/* Interests Section */}{" "}
-              <Typography
-                variant="h6"
-                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
-              >
-                INTERESTS
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Reading, mountaineering, exploring, self-research and personal
-                development
-              </Typography>
-              <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
-              {/* Interests Section */}
-              <Typography
-                variant="h6"
-                sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
-              >
-                INTRODUCTION
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
-                Aptech Computer Education
+              <Typography variant="subtitle2" sx={{ color: "#ffb400", mb: 2 }}>
+                FRONTEND & BACKEND SOFTWARE ENGINEER
               </Typography>
             </Box>
+            {/* Contact Information */}
+            <List>
+              <ListItem disablePadding>
+                <ListItemIcon sx={{ color: "#ffb400" }}>
+                  <PhoneIcon />
+                </ListItemIcon>
+                <ListItemText primary="0397273850" />
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon sx={{ color: "#ffb400" }}>
+                  <MailIcon />
+                </ListItemIcon>
+                <ListItemText primary="ngochoanghuy0504@gmail.com" />
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon sx={{ color: "#ffb400" }}>
+                  <LocationOnIcon />
+                </ListItemIcon>
+                <ListItemText primary="Tuong Mai, Ha Noi" />
+              </ListItem>
+            </List>
+            <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+            {/* Skills Section */}
+            <Typography
+              variant="h6"
+              sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+            >
+              SKILLS
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              Frontend:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              + UI/UX programming based on ReactJS, Javacript (ES6), HTML5/CSS
+              (SCSS), Jquery, Bootstrap 5, TailwindCSS
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              + Responsive web design, working with REST ful APIs. ...
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              Backend:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Backend programming: NodeJS, NextJS
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              Database:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              SQL Server, MySQL, MongoDB ...
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              A.I:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Proficient in applying A.I to accelerate professional tasks.
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold", mb: 1 }}>
+              DevOps:
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Exposed to practical devops knowledge, working with ci - cd of
+              git, gitlab and jenkins ...
+            </Typography>
+            <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+            {/* Interests Section */}{" "}
+            <Typography
+              variant="h6"
+              sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+            >
+              INTERESTS
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Reading, mountaineering, exploring, self-research and personal
+              development
+            </Typography>
+            <Divider sx={{ borderColor: "#ffb400", my: 2 }} />
+            {/* Interests Section */}
+            <Typography
+              variant="h6"
+              sx={{ color: "#ffb400", fontWeight: "bold", mb: 1 }}
+            >
+              INTRODUCTION
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Aptech Computer Education
+            </Typography>
           </Grid2>
-          <Grid2 size={9}>
+          <Grid2 size={{ xs: 12, sm: 8, lg: 9 }}>
             <Box sx={{ padding: 3 }}>
               {/* Header */}
               <Typography

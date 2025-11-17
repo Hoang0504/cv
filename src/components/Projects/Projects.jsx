@@ -18,12 +18,12 @@ function Projects() {
       </Typography>
       <Grid2 container spacing={3}>
         {projects.map((project, index) => (
-          <Grid2 size={6} key={index}>
+          <Grid2 size={{ xs: 12, lg: 6 }} key={index}>
             <Card variant="outlined" sx={{ height: "100%" }}>
               <CardMedia
                 component="img"
                 width="100%"
-                height="500"
+                height="auto"
                 image={project.image}
                 alt={project.name}
               />
